@@ -1,0 +1,75 @@
+/*.card-cover{*/
+/*    min-height: 400px;*/
+/*    transition: transform 0.3s ease;*/
+/*}*/
+
+/*.card-cover:hover{*/
+/*    transform: translateY(-8px);*/
+/*}*/
+
+/* ===========================
+   Featured Experiences
+=========================== */
+
+#featured-experiences h2{
+    color:#0d6efd;
+}
+
+.card-cover{
+    min-height:420px;
+    background-size:cover;
+    background-position:center;
+    border:none;
+    overflow:hidden;
+    transition:all .4s ease;
+    cursor:pointer;
+}
+
+.card-overlay{
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.75),
+        rgba(0,0,0,.35),
+        rgba(0,0,0,.10)
+    );
+    transition:all .4s ease;
+}
+
+.card-cover:hover{
+    transform:translateY(-12px) scale(1.02);
+    box-shadow:0 20px 40px rgba(13,110,253,.45)!important;
+}
+
+.card-cover:hover .card-overlay{
+    background:linear-gradient(
+        to top,
+        rgba(13,110,253,.80),
+        rgba(13,110,253,.45),
+        rgba(0,0,0,.15)
+    );
+}
+
+.card-cover h3{
+    text-shadow:2px 2px 8px rgba(0,0,0,.8);
+}
+
+.card-cover small{
+    font-size:.9rem;
+    font-weight:500;
+}
+
+.card-cover i{
+    transition:transform .3s ease;
+}
+
+.card-cover:hover i{
+    transform:scale(1.15);
+}
+
+.card-cover:hover h3{
+    color:#ffffff;
+}
+
+.card-cover:hover small{
+    color:#f8f9fa !important;
+}
