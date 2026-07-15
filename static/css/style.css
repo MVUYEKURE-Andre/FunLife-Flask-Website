@@ -1,15 +1,20 @@
-/*.card-cover{*/
-/*    min-height: 400px;*/
-/*    transition: transform 0.3s ease;*/
+/*.navbar-collapse{*/
+/*    background:white;*/
+/*    padding:20px;*/
+/*    border-radius:10px;*/
 /*}*/
 
-/*.card-cover:hover{*/
-/*    transform: translateY(-8px);*/
-/*}*/
+/*@media(max-width:991px){*/
 
-/* ===========================
-   Featured Experiences
-=========================== */
+/*    .navbar-nav{*/
+/*        margin-bottom:20px;*/
+/*    }*/
+
+/*    .navbar .btn{*/
+/*        width:100%;*/
+/*    }*/
+
+/*}*/
 
 #featured-experiences h2{
     color:#0d6efd;
