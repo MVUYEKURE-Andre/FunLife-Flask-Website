@@ -1,20 +1,198 @@
-/*.navbar-collapse{*/
-/*    background:white;*/
-/*    padding:20px;*/
-/*    border-radius:10px;*/
+/* =========================
+   FunLife Professional Footer
+========================= */
+
+.footer-section {
+
+    background: linear-gradient(
+        135deg,
+        #e0f2fe,
+        #dbeafe,
+        #eff6ff
+
+    );
+
+    border-top: 1px solid #bfdbfe;
+
+}
+
+/*.footer-section h3 {*/
+
+/*    color: #2563eb;*/
+
+/*    letter-spacing: .8px;*/
+
+/*    font-weight: 800;*/
+
 /*}*/
+.funlife-logo {
 
-/*@media(max-width:991px){*/
+    font-weight: 800;
 
-/*    .navbar-nav{*/
-/*        margin-bottom:20px;*/
-/*    }*/
+    letter-spacing: 1px;
 
-/*    .navbar .btn{*/
-/*        width:100%;*/
-/*    }*/
+    background: linear-gradient(
+        90deg,
+        #2563eb,
+        #38bdf8
+    );
 
-/*}*/
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+
+/* Description */
+
+.footer-section p {
+
+    color: #475569 !important;
+
+    max-width: 500px;
+
+    margin: auto;
+
+}
+
+
+/* Social / Contact Buttons */
+
+.footer-btn {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+
+    padding: 12px 22px;
+
+
+    background: rgba(255,255,255,0.85);
+
+
+    color: #334155;
+
+
+    text-decoration: none;
+
+
+    border-radius: 14px;
+
+
+    border: 1px solid #cbd5e1;
+
+
+    font-weight: 600;
+
+
+    box-shadow:
+
+        0 5px 15px rgba(15,23,42,0.08);
+
+
+    transition: all .35s ease;
+
+}
+
+
+
+/* Icons */
+
+.footer-btn i {
+
+    font-size: 1.25rem;
+
+    transition: transform .35s ease;
+
+}
+
+
+
+/* Hover Animation */
+
+.footer-btn:hover {
+
+    background: #2563eb;
+
+    color: white;
+
+
+    transform:
+
+        translateY(-6px);
+
+
+    border-color:#2563eb;
+
+
+    box-shadow:
+
+        0 15px 30px rgba(37,99,235,.25);
+
+}
+
+
+
+.footer-btn:hover i {
+
+    transform:
+
+        scale(1.2);
+
+}
+
+
+
+/* Divider */
+
+.footer-section hr {
+
+    border-color:#93c5fd;
+
+    opacity:.5;
+
+}
+
+
+
+/* Bottom text */
+
+.footer-section .text-light {
+
+    color:#475569 !important;
+
+}
+
+
+.footer-section .text-info {
+
+    color:#2563eb !important;
+
+}
+
+
+/* Responsive */
+
+@media(max-width:768px){
+
+
+    .footer-btn {
+
+        width:100%;
+
+        max-width:260px;
+
+    }
+
+
+}
 
 #featured-experiences h2{
     color:#0d6efd;
@@ -77,4 +255,252 @@
 
 .card-cover:hover small{
     color:#f8f9fa !important;
+}
+
+/* =========================
+   Connect Message Section
+========================= */
+
+
+.message-section {
+
+    background: linear-gradient(
+        135deg,
+        #eef6ff,
+        #f1fff8
+    );
+
+    border: 1px solid rgba(13,110,253,0.08);
+
+}
+
+
+
+/* Floating card effect */
+
+.message-section .card {
+
+    transition: all .3s ease;
+
+}
+
+
+.message-section .card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+    0 20px 40px rgba(13,110,253,.15)!important;
+
+}
+
+
+
+/* Input styling */
+
+.message-section .form-control {
+
+    border-radius: 12px;
+
+    border: 1px solid #dee2e6;
+
+}
+
+
+
+.message-section .form-control:focus {
+
+    border-color:#0d6efd;
+
+    box-shadow:
+    0 0 0 .25rem rgba(13,110,253,.15);
+
+}
+
+
+
+/* Button animation */
+
+.message-section button {
+
+    transition: all .3s ease;
+
+}
+
+
+
+.message-section button:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+    0 10px 25px rgba(13,110,253,.3);
+
+}
+
+
+/* =========================
+   Memories Page
+========================= */
+
+.featured-story-img{
+
+    height:500px;
+    width:100%;
+    object-fit:cover;
+
+}
+
+
+.memory-card{
+
+    transition:.35s ease;
+
+}
+
+
+.memory-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(13,110,253,.18)!important;
+
+}
+
+
+.memory-img{
+
+    height:260px;
+    object-fit:cover;
+
+}
+
+
+.memory-card img{
+
+    transition:.4s ease;
+
+}
+
+
+.memory-card:hover img{
+
+    transform:scale(1.06);
+
+}
+
+
+.memory-card i{
+
+    transition:.3s ease;
+
+}
+
+
+.memory-card:hover i{
+
+    transform:rotate(-5deg) scale(1.2);
+
+}
+
+/* ===========================
+   Locations
+=========================== */
+
+.location-card{
+
+    transition:.35s ease;
+    overflow:hidden;
+
+}
+
+.location-card:hover{
+
+    transform:translateY(-10px);
+    box-shadow:0 20px 45px rgba(13,110,253,.18)!important;
+
+}
+
+.location-img{
+
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    object-position:center;
+
+}
+
+.location-card img{
+
+    transition:.4s ease;
+
+}
+
+.location-card:hover img{
+
+    transform:scale(1.06);
+
+}
+
+.future-card{
+
+    background:linear-gradient(
+            135deg,
+            #eef6ff,
+            #f8fcff
+    );
+
+    border:1px solid rgba(13,110,253,.08);
+
+}
+
+
+/* ===========================
+   Project Cards
+=========================== */
+
+.project-card{
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+    transition: all .35s ease;
+    height: 100%;
+}
+
+.project-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(13,110,253,.15);
+}
+
+/* All images will have exactly the same size */
+.project-card img{
+    width: 100%;
+    aspect-ratio: 16 / 9;      /* Modern solution */
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform .4s ease;
+}
+
+.project-card:hover img{
+    transform: scale(1.05);
+}
+
+/* Makes every card body equal height */
+.project-card .p-4{
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card h4{
+    font-weight: 700;
+    color: #0d6efd;
+}
+
+.project-card p{
+    color: #6c757d;
+    margin-bottom: 0;
 }

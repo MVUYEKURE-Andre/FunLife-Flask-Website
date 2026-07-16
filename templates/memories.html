@@ -1,8 +1,272 @@
 {% extends "base.html" %}
 
+{% block title %}
+Memories | FunLife
+{% endblock %}
+
 {% block content %}
 
-<div class="container">
-    <h1> Memories with friends </h1>
-</div>
+<!-- =========================
+        HERO
+========================= -->
+
+<section class="container py-5 text-center">
+
+    <span class="badge bg-primary mb-3 px-3 py-2">
+        My Journey
+    </span>
+
+    <h1 class="display-3 fw-bold">
+        Every Project Tells a Story
+    </h1>
+
+    <p class="lead text-muted col-lg-8 mx-auto mt-3">
+        My journey into engineering and software development has been built
+        one challenge, one project, and one lesson at a time.
+        These memories represent growth, curiosity, and the passion to create
+        meaningful solutions.
+    </p>
+
+</section>
+
+
+<!-- =========================
+        FEATURED STORY
+========================= -->
+
+<section class="container py-5">
+
+    <div class="card border-0 shadow-lg rounded-5 overflow-hidden">
+
+        <div class="row g-0 align-items-center">
+
+            <div class="col-lg-6">
+
+                <img src="{{ url_for('static', filename='images/dinner.jpg') }}"
+                     class="img-fluid w-100 featured-story-img"
+                     alt="Engineering Journey">
+
+            </div>
+
+            <div class="col-lg-6 p-5">
+
+                <span class="badge bg-primary mb-3">
+                    Featured Story
+                </span>
+
+                <h2 class="fw-bold mb-4">
+                    The Journey Behind FunLife
+                </h2>
+
+                <p class="text-muted">
+
+                    <!--                    What started as curiosity about electronics slowly became a-->
+                    <!--                    passion for building software that solves real-world problems.-->
+
+                    <!--                    Every Arduino circuit, every Python script, every Flask page,-->
+                    <!--                    and every Django project has taught me something valuable.-->
+
+                    <!--                    FunLife isn't just another website—-->
+                    <!--                    it's a reflection of my growth as an engineer,-->
+                    <!--                    developer, and lifelong learner.-->
+                    What began as a curiosity about electronics has grown into a passion for designing intelligent
+                    systems and building software that solves real-world problems. From assembling Arduino circuits and
+                    programming embedded systems to developing web applications with Flask and Django, every project has
+                    strengthened my technical foundation. Along the way, I've explored Python, C++, MATLAB, HTML, CSS,
+                    Bootstrap, JavaScript, Git, GitHub, and engineering simulation tools such as LTspice, Proteus, and
+                    GNU Radio. FunLife is more than a website—it's a reflection of my continuous growth as an
+                    Electronics and Telecommunication Engineer, software developer, and lifelong learner who enjoys
+                    turning ideas into practical solutions.
+                </p>
+
+                <div class="mt-4 d-flex flex-wrap gap-2">
+
+                    <span class="badge bg-primary">Python</span>
+
+                    <span class="badge bg-success">Flask</span>
+
+                    <span class="badge bg-info text-dark">Django</span>
+
+                    <span class="badge bg-warning text-dark">Arduino</span>
+
+                    <span class="badge bg-secondary">C++</span>
+
+                    <span class="badge bg-danger">MATLAB</span>
+
+                    <span class="badge bg-dark">Git</span>
+
+                    <span class="badge bg-primary">GitHub</span>
+
+                    <span class="badge bg-success">Bootstrap</span>
+
+                    <span class="badge bg-info text-dark">HTML & CSS</span>
+
+                    <span class="badge bg-warning text-dark">JavaScript</span>
+
+                    <span class="badge bg-secondary">Proteus</span>
+
+                    <span class="badge bg-dark">LTspice</span>
+
+                    <span class="badge bg-primary">GNU Radio</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+        JOURNEY CARDS
+========================= -->
+
+<section class="container py-5">
+
+    <div class="text-center mb-5">
+
+        <h2 class="fw-bold">
+            Milestones Along the Way
+        </h2>
+
+        <p class="text-muted">
+            Every step has contributed to the engineer I'm becoming.
+        </p>
+
+    </div>
+
+    <div class="row g-4">
+
+        <!-- Card 1 -->
+
+        <div class="col-md-4">
+
+            <div class="card memory-card h-100 border-0 shadow rounded-4">
+
+                <img src="{{ url_for('static', filename='images/kumazi.jpg') }}"
+                     class="card-img-top memory-img"
+                     alt="Engineering">
+
+                <div class="card-body">
+
+                    <i class="bi bi-cpu-fill text-primary fs-2"></i>
+
+                    <h4 class="fw-bold mt-3">
+                        Engineering Foundation
+                    </h4>
+
+                    <p class="text-muted">
+
+                        Learning electronics, communication systems,
+                        embedded systems, and problem-solving through
+                        engineering principles.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Card 2 -->
+
+        <div class="col-md-4">
+
+            <div class="card memory-card h-100 border-0 shadow rounded-4">
+
+                <img src="{{ url_for('static', filename='images/dinner.jpg') }}"
+                     class="card-img-top memory-img"
+                     alt="Coding">
+
+                <div class="card-body">
+
+                    <i class="bi bi-code-slash text-success fs-2"></i>
+
+                    <h4 class="fw-bold mt-3">
+                        Coding Journey
+                    </h4>
+
+                    <p class="text-muted">
+
+                        From writing simple Python scripts to building
+                        Flask and Django web applications while constantly
+                        improving my development skills.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Card 3 -->
+
+        <div class="col-md-4">
+
+            <div class="card memory-card h-100 border-0 shadow rounded-4">
+
+                <img src="{{ url_for('static', filename='images/game.jpg') }}"
+                     class="card-img-top memory-img"
+                     alt="Projects">
+
+                <div class="card-body">
+
+                    <i class="bi bi-lightbulb-fill text-warning fs-2"></i>
+
+                    <h4 class="fw-bold mt-3">
+                        Building Solutions
+                    </h4>
+
+                    <p class="text-muted">
+
+                        Turning ideas into projects by combining software,
+                        hardware, creativity, and continuous learning.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+        QUOTE
+========================= -->
+
+<section class="container py-5">
+
+    <div class="p-5 rounded-5 bg-light text-center shadow-sm">
+
+        <i class="bi bi-quote display-3 text-primary"></i>
+
+        <h3 class="fw-bold mt-3">
+
+            Great engineers aren't built overnight.
+
+        </h3>
+
+        <p class="lead text-muted">
+
+            Every project, every bug, every failure,
+            and every success becomes part of the journey.
+
+        </p>
+
+    </div>
+
+</section>
+
 {% endblock %}

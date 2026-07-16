@@ -1,8 +1,245 @@
+
 {% extends "base.html" %}
+
+{% block title %}
+Locations | FunLife
+{% endblock %}
 
 {% block content %}
 
-<div class="container">
-<h1> location of memories</h1>
-     </div>
+<!-- =========================
+        HERO
+========================= -->
+
+<section class="container py-5 text-center">
+
+    <span class="badge bg-primary px-3 py-2 mb-3">
+        My Journey
+    </span>
+
+    <h1 class="display-3 fw-bold">
+        Places That Shaped My Journey
+    </h1>
+
+    <p class="lead text-muted col-lg-8 mx-auto mt-3">
+        Every place has contributed to the engineer and developer
+        I'm becoming. From classrooms to online communities,
+        each step represents growth, learning, and purpose.
+    </p>
+
+</section>
+
+
+
+<!-- =========================
+        LOCATIONS
+========================= -->
+
+<section class="container pb-5">
+
+    <div class="row g-4">
+
+        <!-- University -->
+
+        <div class="col-lg-6">
+
+            <div class="card location-card border-0 shadow rounded-4 h-100">
+
+                <img src="{{ url_for('static', filename='images/ur.jpg') }}"
+                     class="card-img-top location-img"
+                     alt="University of Rwanda">
+
+                <div class="card-body">
+
+                    <span class="badge bg-primary mb-3">
+                        01
+                    </span>
+
+                    <h3 class="fw-bold">
+                        University of Rwanda
+                    </h3>
+
+                    <p class="text-primary fw-semibold">
+                        Electronics & Telecommunication Engineering
+                    </p>
+
+                    <p class="text-muted">
+                        The place where engineering became more than
+                        a dream. Here I developed strong foundations
+                        in electronics, embedded systems,
+                        telecommunications and software development.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <!-- St Mary's -->
+
+        <div class="col-lg-6">
+
+            <div class="card location-card border-0 shadow rounded-4 h-100">
+
+                <img src="{{ url_for('static', filename='images/stmary.jpg') }}"
+                     class="card-img-top location-img"
+                     alt="St Mary's">
+
+                <div class="card-body">
+
+                    <span class="badge bg-success mb-3">
+                        02
+                    </span>
+
+                    <h3 class="fw-bold">
+                        St. Mary's High School
+                    </h3>
+
+                    <p class="text-success fw-semibold">
+                        Discipline • Leadership • Science
+                    </p>
+
+                    <p class="text-muted">
+                        My passion for mathematics, physics,
+                        leadership and technology began here,
+                        laying the foundation for my future
+                        engineering career.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <!-- CMU -->
+
+        <div class="col-lg-6">
+
+            <div class="card location-card border-0 shadow rounded-4 h-100">
+
+                <img src="{{ url_for('static', filename='images/cmu.jpg') }}"
+                     class="card-img-top location-img"
+                     alt="CMU Africa">
+
+                <div class="card-body">
+
+                    <span class="badge bg-warning text-dark mb-3">
+                        03
+                    </span>
+
+                    <h3 class="fw-bold">
+                        CMU Africa
+                    </h3>
+
+                    <p class="text-warning-emphasis fw-semibold">
+                        Innovation & Technology
+                    </p>
+
+                    <p class="text-muted">
+                        Through workshops, seminars and learning
+                        opportunities, I continue exploring
+                        Artificial Intelligence, software engineering
+                        and innovation.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <!-- Online -->
+
+        <div class="col-lg-6">
+
+            <div class="card location-card border-0 shadow rounded-4 h-100">
+
+                <img src="{{ url_for('static', filename='images/online.jpg') }}"
+                     class="card-img-top location-img"
+                     alt="Online Learning">
+
+                <div class="card-body">
+
+                    <span class="badge bg-info mb-3">
+                        04
+                    </span>
+
+                    <h3 class="fw-bold">
+                        Online Learning
+                    </h3>
+
+                    <p class="text-info fw-semibold">
+                        Continuous Growth
+                    </p>
+
+                    <p class="text-muted">
+                        Learning never stops. Through YouTube,
+                        official documentation, Udemy,
+                        GitHub and open-source projects,
+                        I continue improving every day.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- =========================
+        FUTURE
+========================= -->
+
+<section class="container py-5">
+
+    <div class="future-card rounded-5 p-5 text-center">
+
+        <h2 class="fw-bold">
+
+            The Next Destination
+
+        </h2>
+
+        <p class="lead text-muted">
+
+            My journey is only beginning.
+
+            Whether it's an internship,
+            graduate studies,
+            building impactful software,
+            or launching innovative products,
+
+            the next chapter is waiting.
+
+        </p>
+
+        <a href="{{ url_for('connect') }}"
+           class="btn btn-primary btn-lg rounded-pill px-5">
+
+            Let's Build Together
+
+        </a>
+
+    </div>
+
+</section>
+
 {% endblock %}
